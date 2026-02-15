@@ -64,7 +64,7 @@ Six classification models were implemented and evaluated on the same dataset. Th
 
 ### Observations on Model Performance
 
-| ML Model Name       | Observation |
+| ML Model Name       | Observation about model performance  |
 |---------------------|-------------|
 | Logistic Regression | Achieved high accuracy but very low recall, indicating strong bias toward the majority class. The model struggles to correctly identify customers who subscribe, making it suitable only as a baseline model. |
 | Decision Tree       | Demonstrated improved recall and F1-score by capturing non-linear relationships in the data. Model performance is balanced, but requires depth control to avoid overfitting. |
