@@ -77,4 +77,9 @@ Six classification models were implemented and evaluated on the same dataset. Th
 
 ## Additional Information
 
-### Repository Structure
+### How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the Streamlit app: `streamlit run app.py`
+4. Upload a test CSV file (use `bank.csv` as a sample) and select a model to see evaluation metrics and classification report.
+
