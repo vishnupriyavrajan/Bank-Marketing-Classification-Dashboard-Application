@@ -66,12 +66,12 @@ Six classification models were implemented and evaluated on the same dataset. Th
 
 | ML Model Name       | Observation |
 |---------------------|-------------|
-| Logistic Regression | Provides a strong linear baseline with good overall accuracy and AUC. However, recall is relatively low, indicating it misses a fair number of positive (subscribed) cases. |
-| Decision Tree       | Easy to interpret but tends to overfit the training data. Performance is moderate; lower AUC and MCC compared to ensemble methods. |
-| K-Nearest Neighbors | Sensitive to feature scaling and distance metrics. Achieves decent accuracy but recall remains low. Performance can vary with the choice of `k`. |
+| Logistic Regression | Achieved high accuracy but very low recall, indicating strong bias toward the majority class. The model struggles to correctly identify customers who subscribe, making it suitable only as a baseline model. |
+| Decision Tree       | Demonstrated improved recall and F1-score by capturing non-linear relationships in the data. Model performance is balanced, but requires depth control to avoid overfitting. |
+| K-Nearest Neighbors | Strong AUC but moderate recall, sensitive to feature scaling and data distribution. High AUC indicating good class separation.Distance-based learning works well but is sensitive to data distribution |
 | Naive Bayes         | Assumes feature independence, which is not strictly true. Nevertheless, it yields a higher recall than logistic regression, capturing more positive instances at the cost of precision. |
-| Random Forest       | Ensemble of decision trees reduces overfitting and improves generalization. It achieves the second‑best overall metrics, with a good balance between precision and recall. |
-| XGBoost             | Gradient boosting delivers the highest accuracy, AUC, and MCC. It slightly outperforms Random Forest, making it the best model for this dataset. |
+| Random Forest       | Achieved high precision and accuracy by making conservative predictions. However, lower recall suggests the model prioritizes reducing false positives over detecting all subscribers. |
+| XGBoost             | Outperformed all other models with the highest AUC, F1-score, and MCC. Effectively handled class imbalance and complex feature interactions, making it the most suitable model for deployment.|
 
 ---
 
